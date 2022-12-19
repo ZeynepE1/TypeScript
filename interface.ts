@@ -23,3 +23,4 @@ interface Vehicle {
 // taxi_2 => 41 abd 41
 // taxi_2.currentLocation
 // taxi_2.travelTo()
+//video 26.11 dk
