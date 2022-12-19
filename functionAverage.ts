@@ -1,5 +1,5 @@
-//parametre bilgisi belli değilse
-function getAverage(...a: number[]): string {
+//parametre bilgisi belli değilse ve arrow function kullanıyorsak
+const getAverage2 = (...a: number[]): string => {
   let total = 0;
   let count = 0;
 
@@ -11,8 +11,8 @@ function getAverage(...a: number[]): string {
   const result = total / count;
   console.log(result);
   return "result:" + result;
-}
-getAverage(10, 20, 50);
-getAverage(10, 30);
-getAverage(10, 20, 50, 60, 80, 70);
-getAverage(10, 30, 46, 89, 98);
+};
+getAverage2(10, 20, 50);
+getAverage2(10, 30);
+getAverage2(10, 20, 50, 60, 80, 70);
+getAverage2(10, 30, 46, 89, 98);

@@ -1,5 +1,5 @@
-//parametre bilgisi belli değilse
-function getAverage() {
+//parametre bilgisi belli değilse ve arrow function kullanıyorsak
+var getAverage2 = function () {
     var a = [];
     for (var _i = 0; _i < arguments.length; _i++) {
         a[_i] = arguments[_i];
@@ -13,8 +13,8 @@ function getAverage() {
     var result = total / count;
     console.log(result);
     return "result:" + result;
-}
-getAverage(10, 20, 50);
-getAverage(10, 30);
-getAverage(10, 20, 50, 60, 80, 70);
-getAverage(10, 30, 46, 89, 98);
+};
+getAverage2(10, 20, 50);
+getAverage2(10, 30);
+getAverage2(10, 20, 50, 60, 80, 70);
+getAverage2(10, 30, 46, 89, 98);
